@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="One Bullet - A survival game about avoiding your own mistake. Fire a bullet that never despawns and see how long you can survive.">
+    <title>One Bullet - Survival Game</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/app_logo_no_bg.png">
+    
+    <!-- CSS - Modular imports -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <!-- ========================================
+         Navigation
+         ======================================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav__content">
+            <!-- Logo -->
+            <a href="/" class="nav__logo">
+                <img src="assets/images/app_logo_no_bg.png" alt="One Bullet Logo">
+                <span>One Bullet</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#gameplay" class="nav__link">Gameplay</a>
+                <a href="#waves" class="nav__link">Waves</a>
+                <a href="privacy.html" class="nav__link">Privacy</a>
+
+            </div>
+            
+            <!-- Mobile Toggle -->
+            <button class="nav__toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('is-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero">
+        <div class="container hero__content">
+            <!-- Text Content -->
+            <div class="hero__text">
+                <span class="badge hero__badge">Survival Game</span>
+                <h1 class="hero__title">
+                    Fire Once.<br>
+                    <span>Survive Forever.</span>
+                </h1>
+                <p class="hero__description">
+                    A minimalist survival game about avoiding your own mistake. 
+                    Fire a bullet that <strong>never despawns</strong> — then dodge it for as long as you can.
+                </p>
+                <div class="hero__cta">
+                    <span class="btn btn--primary btn--disabled">
+                        Coming Soon
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Visual -->
+            <div class="hero__visual">
+                <div class="hero__image-wrapper">
+                    <img src="assets/images/app_logo_no_bg.png" alt="One Bullet Game" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Features Section
+         ======================================== -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">Simple mechanics, endless challenge</p>
+            </div>
+            
+            <div class="grid grid-auto-fit">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🎯</div>
+                    <h3 class="feature-card__title">One Bullet</h3>
+                    <p class="feature-card__description">
+                        A single bullet that never despawns. Your biggest threat is your own creation.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🔄</div>
+                    <h3 class="feature-card__title">Ricochet Physics</h3>
+                    <p class="feature-card__description">
+                        The bullet bounces off walls with slight angular deviations — unpredictable chaos.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">📈</div>
+                    <h3 class="feature-card__title">Progressive Waves</h3>
+                    <p class="feature-card__description">
+                        Difficulty ramps up with faster bullets and spawning deflectors as you survive.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🪵</div>
+                    <h3 class="feature-card__title">Destructible Deflectors</h3>
+                    <p class="feature-card__description">
+                        Wooden obstacles that bounce the bullet and break apart on impact.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🎮</div>
+                    <h3 class="feature-card__title">Cross-Platform</h3>
+                    <p class="feature-card__description">
+                        Play on Android, iOS, Windows, macOS, Linux, or Web — your choice.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🏆</div>
+                    <h3 class="feature-card__title">High Score Tracking</h3>
+                    <p class="feature-card__description">
+                        Local high score persistence. Beat your own record and climb the ranks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         How It Works Section
+         ======================================== -->
+    <section class="section" id="gameplay">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Play</h2>
+                <p class="section-subtitle">Simple rules, intense gameplay</p>
+            </div>
+            
+            <div class="steps" style="max-width: 600px; margin: 0 auto;">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Fire Once</h3>
+                        <p class="step__description">
+                            Tap the screen (or click on desktop) to fire your bullet in the aimed direction. Choose wisely — you only get one shot.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Move &amp; Dodge</h3>
+                        <p class="step__description">
+                            Use the virtual joystick on mobile or WASD/Arrow keys on desktop. The bullet ricochets off walls and speeds up over time.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Survive Waves</h3>
+                        <p class="step__description">
+                            Each wave brings faster bullets and more deflector obstacles. How long can you last?
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step__number">4</div>
+                    <div class="step__content">
+                        <h3 class="step__title">One Hit = Game Over</h3>
+                        <p class="step__description">
+                            Touch the bullet once and it's over. Your survival time becomes your score.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Wave System Section
+         ======================================== -->
+    <section class="section section--reduced" id="waves" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Wave System</h2>
+                <p class="section-subtitle">Difficulty scales as you survive</p>
+            </div>
+            
+            <div style="overflow-x: auto;">
+                <table class="waves-table">
+                    <thead>
+                        <tr>
+                            <th>Wave</th>
+                            <th>Duration</th>
+                            <th>Bullet Speed</th>
+                            <th>Deflectors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="wave-number">1</td>
+                            <td>15 seconds</td>
+                            <td>350 → 400</td>
+                            <td>None</td>
+                        </tr>
+                        <tr>
+                            <td class="wave-number">2</td>
+                            <td>18 seconds</td>
+                            <td>400 → 450</td>
+                            <td>Every 5s</td>
+                        </tr>
+                        <tr>
+                            <td class="wave-number">3</td>
+                            <td>20 seconds</td>
+                            <td>450 → 500</td>
+                            <td>Every 8s</td>
+                        </tr>
+                        <tr>
+                            <td class="wave-number">4</td>
+                            <td>22 seconds</td>
+                            <td>500 → 550</td>
+                            <td>Every 5s</td>
+                        </tr>
+                        <tr>
+                            <td class="wave-number">5</td>
+                            <td>25 seconds</td>
+                            <td>550 → 650</td>
+                            <td>Every 5s</td>
+                        </tr>
+                        <tr>
+                            <td class="wave-number">6+</td>
+                            <td>∞</td>
+                            <td>650 → 720</td>
+                            <td>Every 3s</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Section
+         ======================================== -->
+    <section class="cta-section section">
+        <div class="container">
+            <h2 class="cta-section__title">Ready to Test Your Reflexes?</h2>
+            <p class="cta-section__description">
+                One Bullet is coming soon to app stores. Stay tuned!
+            </p>
+            <div class="flex justify-center gap-md flex-wrap">
+                <span class="btn btn--primary btn--disabled">
+                    Coming Soon
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border);">
+        <div class="container">
+            <h2 class="contact-section__title">Get in Touch</h2>
+            <p class="contact-section__description">
+                Have questions or want to stay updated? Send an email!
+            </p>
+            <!-- spacer -->
+             <div style="height: 20px;"></div>
+            <div class="flex justify-center gap-md flex-wrap">
+                <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--secondary">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__copyright">
+                © 2026 One Bullet. All rights reserved.
+            </p>
+            <div class="footer__links">
+                <a href="privacy.html" class="footer__link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JavaScript - Smooth Scroll & Nav Toggle
+         ======================================== -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile nav if open
+                    document.getElementById('nav').classList.remove('is-open');
+                }
+            });
+        });
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.getElementById('nav');
+            if (!nav.contains(e.target)) {
+                nav.classList.remove('is-open');
+            }
+        });
+    </script>
+</body>
+</html>
