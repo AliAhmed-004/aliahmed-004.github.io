@@ -1,0 +1,45 @@
+
+Privacy Policy
+
+Effective Date: May 8, 2025
+
+SpudByte built the ProgressPal app as an offline productivity tool. This app is provided by us and is intended for use as is.
+1. Information Collection and Use
+
+ProgressPal does not collect personally identifiable information from users.
+
+However, certain features may involve temporary data processing:
+
+    AI Goal Generation: If you use this feature, the app sends your entered Track and Goal names to an external AI service to generate suggestions. This data is:
+        Not linked to your identity
+        Not stored by us
+        Not used for tracking or analytics
+
+We do not collect, store, or share any personal data from your device.
+2. Permissions
+
+The app requests the following permission:
+
+    Notifications: To remind you to complete your goals. Notifications are optional and controlled by your device settings.
+
+3. Data Safety
+
+    No account is required to use the app.
+    All user progress is stored locally on your device.
+    We do not use third-party analytics or advertising SDKs.
+
+4. Third-Party Services
+
+The app uses external services only for optional AI-powered goal generation. These services may process the text you input, but are not used for tracking.
+5. Security
+
+We value your trust. Although no personal information is collected, we strive to ensure any temporary data is handled securely.
+6. Children’s Privacy
+
+ProgressPal does not knowingly collect data from children under 13.
+7. Changes to This Policy
+
+We may update this policy. Any changes will be posted here and take effect immediately.
+8. Contact Us
+
+If you have any questions or feedback, please email us at ali.the.ahmed18@gmail.com.
