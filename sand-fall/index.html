@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sand Fall - A sand-physics puzzle game. Place blocks that break into sand and clear bridges spanning the grid.">
+    <title>Sand Fall - Sand Physics Puzzle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+
+    <!-- CSS - Modular imports -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <!-- ========================================
+         Navigation
+         ======================================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav__content">
+            <!-- Logo -->
+            <a href="/" class="nav__logo">
+                <img src="assets/images/app_icon.png" alt="Sand Fall Logo">
+                <span>Sand Fall</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#gameplay" class="nav__link">How to Play</a>
+                <a href="#scoring" class="nav__link">Scoring</a>
+                <a href="privacy.html" class="nav__link">Privacy</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="nav__toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('is-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero">
+        <div class="container hero__content">
+            <!-- Text Content -->
+            <div class="hero__text">
+                <span class="badge hero__badge">Sand Physics Puzzle</span>
+                <h1 class="hero__title">
+                    Stack Sand.<br>
+                    <span>Clear Bridges.</span>
+                </h1>
+                <p class="hero__description">
+                    A puzzle game where blocks break into sand grains that fall under gravity.
+                    Place pieces strategically so same-colored sand spans the full width of the grid to clear them and score points.
+                </p>
+
+                <!-- Button to Store Listing -->
+                <div class="hero__cta">
+                   <span class="btn btn--primary btn--disabled">
+                        Coming Soon
+                   </span>
+                </div>
+            </div>
+
+            <!-- Visual -->
+            <div class="hero__visual">
+                <div class="hero__image-wrapper">
+                    <img src="assets/images/app_icon.png" alt="Sand Fall Game" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Features Section
+         ======================================== -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">Simple mechanics, strategic gameplay</p>
+            </div>
+
+            <div class="grid grid-auto-fit">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🏝️</div>
+                    <h3 class="feature-card__title">Sand Physics</h3>
+                    <p class="feature-card__description">
+                        Blocks break into individual sand grains that fall under gravity and settle naturally on the grid.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🌈</div>
+                    <h3 class="feature-card__title">Color Bridges</h3>
+                    <p class="feature-card__description">
+                        When same-colored sand forms a continuous bridge from left to right, it clears from the grid.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">💥</div>
+                    <h3 class="feature-card__title">Combo Chains</h3>
+                    <p class="feature-card__description">
+                        Clearing bridges causes sand above to fall, potentially triggering more clears for chain combos.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">📈</div>
+                    <h3 class="feature-card__title">Progressive Difficulty</h3>
+                    <p class="feature-card__description">
+                        Hit score milestones to unlock additional colors, increasing the challenge as you progress.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">💾</div>
+                    <h3 class="feature-card__title">Auto-Save</h3>
+                    <p class="feature-card__description">
+                        Your game progress saves automatically every few moves, so you can continue where you left off.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🏆</div>
+                    <h3 class="feature-card__title">High Score</h3>
+                    <p class="feature-card__description">
+                        Local high score tracking persists across sessions. Challenge yourself to beat your personal best.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         How It Works Section
+         ======================================== -->
+    <section class="section" id="gameplay">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Play</h2>
+                <p class="section-subtitle">Easy to learn, hard to master</p>
+            </div>
+
+            <div class="steps" style="max-width: 600px; margin: 0 auto;">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Place Blocks</h3>
+                        <p class="step__description">
+                            Tap or click on the grid to place the next block. Only one block can be placed at a time, and only when the board is stable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Watch the Sand Fall</h3>
+                        <p class="step__description">
+                            The block shatters into sand grains that fall under gravity. They settle into piles and find their way into gaps.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Clear Bridges</h3>
+                        <p class="step__description">
+                            Once the board stabilizes, any connected bridge of same-colored sand spanning left to right clears away.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">4</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Chain Combos</h3>
+                        <p class="step__description">
+                            When sand above a cleared bridge falls, it may create new bridges for even bigger combo scores.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">5</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Avoid Game Over</h3>
+                        <p class="step__description">
+                            If sand reaches the top 10% of the grid, the game ends. Plan your placements carefully!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Scoring Section
+         ======================================== -->
+    <section class="section section--reduced" id="scoring" style="background-color: var(--color-surface); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Scoring & Difficulty</h2>
+                <p class="section-subtitle">Rack up points and unlock new colors</p>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="scoring-table">
+                    <thead>
+                        <tr>
+                            <th>Score Milestone</th>
+                            <th>Colors Available</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="milestone-number">Start</td>
+                            <td>3 Colors</td>
+                            <td>Game begins with red, green, and blue sand.</td>
+                        </tr>
+                        <tr>
+                            <td class="milestone-number">25,000</td>
+                            <td>4 Colors</td>
+                            <td>Unlocks a fourth color to work with.</td>
+                        </tr>
+                        <tr>
+                            <td class="milestone-number">50,000</td>
+                            <td>5 Colors</td>
+                            <td>A fifth color joins the mix for more combinations.</td>
+                        </tr>
+                        <tr>
+                            <td class="milestone-number">75,000+</td>
+                            <td>6 Colors</td>
+                            <td>All six colors available at highest difficulty.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-2" style="margin-top: var(--spacing-3xl); max-width: 700px; margin-left: auto; margin-right: auto;">
+                <div class="card">
+                    <h3 class="card__title">Placement Points</h3>
+                    <p class="card__description">
+                        Earn points for each successful block placement. Choose wisely where to place each piece.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Bridge Clear Points</h3>
+                    <p class="card__description">
+                        Clear a bridge to score based on its size. Larger bridges mean more points.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Combo Bonus</h3>
+                    <p class="card__description">
+                        Chain multiple clears in one turn for a combo multiplier bonus.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Milestone Rewards</h3>
+                    <p class="card__description">
+                        Hit every 25,000 points to unlock a new color and increase the challenge.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Section
+         ======================================== -->
+    <section class="cta-section section">
+        <div class="container">
+            <h2 class="cta-section__title">Ready to Get Sandy?</h2>
+            <p class="cta-section__description">
+                Sand Fall is coming soon to app stores. Stay tuned!
+            </p>
+            <div class="flex justify-center gap-md flex-wrap">
+                <span class="btn btn--primary btn--disabled">
+                    Coming Soon
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Contact Section
+         ======================================== -->
+    <section class="contact-section section">
+        <div class="container">
+            <h2 class="contact-section__title">Get in Touch</h2>
+            <p class="contact-section__description">
+                Have questions or want to stay updated? Send an email!
+            </p>
+            <!-- spacer -->
+             <div style="height: 20px;"></div>
+            <div class="flex justify-center gap-md flex-wrap">
+                <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--secondary">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__copyright">
+                © 2026 Sand Fall. All rights reserved.
+            </p>
+            <div class="footer__links">
+                <a href="privacy.html" class="footer__link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JavaScript - Smooth Scroll & Nav Toggle
+         ======================================== -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile nav if open
+                    document.getElementById('nav').classList.remove('is-open');
+                }
+            });
+        });
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.getElementById('nav');
+            if (!nav.contains(e.target)) {
+                nav.classList.remove('is-open');
+            }
+        });
+    </script>
+</body>
+</html>

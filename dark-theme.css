@@ -234,6 +234,9 @@ nav {
   height: 100%;
   object-fit: cover;
 }
+.project-img .icon {
+  display: none;
+}
 .project-info {
   flex: 1;
   display: flex;
@@ -387,6 +390,12 @@ footer {
   .about-title {
     text-align: center;
   }
+  .project-img .screenshot {
+    display: none;
+  }
+  .project-img .icon {
+    display: block;
+  }
 }
 @media (max-width: 600px) {
   .nav-container {
@@ -396,9 +405,11 @@ footer {
     width: 160px;
     height: 160px;
   }
-  .project-img {
-    width: 180px;
-    height: 340px;
+  .project-img .screenshot {
+    display: none;
+  }
+  .project-img .icon {
+    display: block;
   }
   .skills-icons {
     gap: 18px;
