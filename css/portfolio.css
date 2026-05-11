@@ -334,9 +334,12 @@
 
 .skills__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-2xl);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skill-item {
@@ -479,7 +482,7 @@ footer p {
     }
     
     .skills__grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .project-card__header {
@@ -524,8 +527,9 @@ footer p {
     }
     
     .skills__grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: var(--spacing-md);
+        max-width: 200px;
     }
     
     .skill-item {
