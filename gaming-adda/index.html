@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Adda - A Home for Classic Board & Arcade Games</title>
+  <meta name="description" content="Gaming Adda - One app, many games. Play Checkers, Ludo, and Penguin Brothers against a built-in AI or a local opponent.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <link rel="stylesheet" href="/gaming-adda/css/variables.css">
+  <link rel="stylesheet" href="/gaming-adda/css/base.css">
+  <link rel="stylesheet" href="/gaming-adda/css/components.css">
+  <link rel="stylesheet" href="/gaming-adda/css/layout.css">
+  <link rel="stylesheet" href="/gaming-adda/css/landing.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="container nav__content">
+      <a href="/" class="nav__logo">
+        <span style="font-size: 1.6rem; line-height: 1;">🎮</span>
+        <span>Gaming Adda</span>
+      </a>
+      <div class="nav__links">
+        <a href="#games" class="nav__link">Games</a>
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#platforms" class="nav__link">Platforms</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="privacy.html" class="nav__link">Privacy</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('is-open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <span class="badge hero__badge">Board & Arcade Games</span>
+        <h1 class="hero__title">One App.<br><span>Many Games.</span></h1>
+        <p class="hero__description">
+          Gaming Adda is a single app that hosts a collection of board and arcade games. Browse a game-store style
+          shell, pick a game, configure a match, and play—against a built-in AI or a local opponent.
+        </p>
+        <div class="hero__cta">
+          <a href="#games" class="btn btn--primary">Explore the Games</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__image-wrapper" style="display: flex; align-items: center; justify-content: center; font-size: 8rem;">
+          🎮
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="games">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Games</h2>
+        <p class="section-subtitle">Each game keeps its own rules, board, and AI</p>
+      </div>
+      <div class="grid grid-auto-fit">
+        <div class="feature-card">
+          <div class="feature-card__icon">🔴</div>
+          <h3 class="feature-card__title">Checkers</h3>
+          <p class="feature-card__description">A classic strategy game. Play against the computer or a local two-player match.</p>
+          <div class="project-card__tags"><span class="tag">Strategy</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎲</div>
+          <h3 class="feature-card__title">Ludo</h3>
+          <p class="feature-card__description">The family favourite. Face the computer or a local hotseat game for 2–4 players.</p>
+          <div class="project-card__tags"><span class="tag">Family</span></div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🐧</div>
+          <h3 class="feature-card__title">Penguin Brothers</h3>
+          <p class="feature-card__description">A bomb-and-escape arcade romp built on Flame. Go solo or team up with an AI partner.</p>
+          <div class="project-card__tags"><span class="tag">Action</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Gaming Adda</h2>
+        <p class="section-subtitle">Built as one polished, offline-friendly shell</p>
+      </div>
+      <div class="grid grid-auto-fit">
+        <div class="feature-card"><div class="feature-card__icon">🏪</div><h3 class="feature-card__title">Game-Store Shell</h3><p class="feature-card__description">Browse a clean store-style home, open a game's detail page, and jump straight in.</p></div>
+        <div class="feature-card"><div class="feature-card__icon">🤖</div><h3 class="feature-card__title">Play vs Computer</h3><p class="feature-card__description">A built-in AI opponent for every game when you want to play on your own.</p></div>
+        <div class="feature-card"><div class="feature-card__icon">👥</div><h3 class="feature-card__title">Local Multiplayer</h3><p class="feature-card__description">Pass-and-play on a single device—two players, or up to four in Ludo.</p></div>
+        <div class="feature-card"><div class="feature-card__icon">⚙️</div><h3 class="feature-card__title">Configurable Matches</h3><p class="feature-card__description">Each game has its own setup screen to choose play mode, sound, and more.</p></div>
+        <div class="feature-card"><div class="feature-card__icon">🌗</div><h3 class="feature-card__title">Dark & Light</h3><p class="feature-card__description">A cartoon-styled UI toolkit with dark and light themes throughout.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="platforms">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Runs Everywhere</h2>
+        <p class="section-subtitle">One Flutter codebase, six platforms</p>
+      </div>
+      <div class="grid grid-auto-fit" style="max-width: 720px; margin: 0 auto;">
+        <div class="feature-card"><div class="feature-card__icon">🤖</div><h3 class="feature-card__title">Android</h3></div>
+        <div class="feature-card"><div class="feature-card__icon">🍎</div><h3 class="feature-card__title">iOS</h3></div>
+        <div class="feature-card"><div class="feature-card__icon">🐧</div><h3 class="feature-card__title">Linux</h3></div>
+        <div class="feature-card"><div class="feature-card__icon">💻</div><h3 class="feature-card__title">macOS</h3></div>
+        <div class="feature-card"><div class="feature-card__icon">🌐</div><h3 class="feature-card__title">Web</h3></div>
+        <div class="feature-card"><div class="feature-card__icon">🪟</div><h3 class="feature-card__title">Windows</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <h2 class="contact-section__title">Get in Touch</h2>
+      <p class="contact-section__description">Questions or feedback? Email me!</p>
+      <div style="height: 20px;"></div>
+      <div class="flex justify-center gap-md flex-wrap">
+        <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--secondary">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copyright">© 2026 Gaming Adda. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="privacy.html" class="footer__link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          document.getElementById('nav').classList.remove('is-open');
+        }
+      });
+    });
+    document.addEventListener('click', (e) => {
+      const nav = document.getElementById('nav');
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('is-open');
+      }
+    });
+  </script>
+</body>
+</html>

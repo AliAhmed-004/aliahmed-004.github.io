@@ -1,0 +1,143 @@
+/* ==========================================================================
+   Privacy Policy Page Specific Styles
+   ========================================================================== */
+
+/* -------------------------
+   Privacy Page Layout
+   ------------------------- */
+.privacy-page {
+    padding: var(--spacing-3xl) 0;
+}
+
+.privacy-page .container {
+    max-width: 720px;
+}
+
+/* -------------------------
+   Privacy Header
+   ------------------------- */
+.privacy-header {
+    margin-bottom: var(--spacing-3xl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.privacy-header__title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.privacy-header__subtitle {
+    color: var(--color-text-muted);
+}
+
+.privacy-header__back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.privacy-header__back:hover {
+    color: var(--color-accent);
+}
+
+/* -------------------------
+   Privacy Sections
+   ------------------------- */
+.privacy-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.privacy-section:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-section__title {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-primary);
+}
+
+.privacy-section__list {
+    padding-left: 0;
+}
+
+.privacy-section__list li {
+    position: relative;
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+    color: var(--color-text-secondary);
+}
+
+.privacy-section__list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+/* -------------------------
+   Highlight Box
+   ------------------------- */
+.privacy-highlight {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    padding: var(--spacing-lg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin-top: var(--spacing-md);
+}
+
+.privacy-highlight p {
+    color: var(--color-text-secondary);
+}
+
+.privacy-highlight p + p {
+    margin-top: var(--spacing-sm);
+}
+
+/* -------------------------
+   Contact Box
+   ------------------------- */
+.privacy-contact {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-top: var(--spacing-md);
+}
+
+.privacy-contact p {
+    margin-bottom: var(--spacing-md);
+}
+
+/* -------------------------
+   Privacy Footer
+   ------------------------- */
+.privacy-footer {
+    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.privacy-footer p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+/* -------------------------
+   Responsive
+   ------------------------- */
+@media (max-width: 768px) {
+    .privacy-header__title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .privacy-section__title {
+        font-size: var(--font-size-lg);
+    }
+}
