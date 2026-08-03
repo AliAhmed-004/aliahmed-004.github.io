@@ -1,5 +1,6 @@
 Developer Portfolio Website Brief
 
+
 Build a clean, modern, responsive personal portfolio website using HTML + CSS + a little JavaScript (no frameworks). The design should feel minimal, professional, and app-developer focused.
 
 Developer Name
