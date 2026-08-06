@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Portfolio -->
+  <url>
+    <loc>https://aliahmed-004.github.io/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Gaming Adda -->
+  <url>
+    <loc>https://aliahmed-004.github.io/gaming-adda/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aliahmed-004.github.io/gaming-adda/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- One Bullet -->
+  <url>
+    <loc>https://aliahmed-004.github.io/one-bullet/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aliahmed-004.github.io/one-bullet/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Personal Diary -->
+  <url>
+    <loc>https://aliahmed-004.github.io/personal-diary/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aliahmed-004.github.io/personal-diary/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ProgressPal -->
+  <url>
+    <loc>https://aliahmed-004.github.io/progresspal/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aliahmed-004.github.io/progresspal/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- Sand Fall -->
+  <url>
+    <loc>https://aliahmed-004.github.io/sand-fall/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aliahmed-004.github.io/sand-fall/privacy.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- UpNext -->
+  <url>
+    <loc>https://aliahmed-004.github.io/upnext/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
