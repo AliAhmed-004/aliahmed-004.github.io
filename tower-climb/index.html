@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tower Climb - An endless vertical pixel-art platformer. Bounce up a crumbling tower through six biomes and see how high you can climb.">
+    <title>Tower Climb - Endless Vertical Platformer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+    <!-- CSS - Modular imports -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+    <!-- ========================================
+         Navigation
+         ======================================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav__content">
+            <!-- Logo -->
+            <a href="/" class="nav__logo">
+                <img src="assets/images/app_icon.png" alt="Tower Climb Logo">
+                <span>Tower Climb</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="nav__links">
+                <a href="#features" class="nav__link">Features</a>
+                <a href="#gameplay" class="nav__link">How to Play</a>
+                <a href="#stages" class="nav__link">Stages</a>
+                <a href="privacy.html" class="nav__link">Privacy</a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="nav__toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('is-open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         Hero Section
+         ======================================== -->
+    <section class="hero">
+        <div class="container hero__content">
+            <!-- Text Content -->
+            <div class="hero__text">
+                <span class="badge hero__badge">Endless Vertical Platformer</span>
+                <h1 class="hero__title">
+                    Bounce Up.<br>
+                    <span>Don't Look Down.</span>
+                </h1>
+                <p class="hero__description">
+                    A pixel-art climber where every landing launches you higher. Hop between platforms,
+                    outrun the rising camera, and climb an ancient tower through six crumbling biomes.
+                </p>
+
+                <div class="hero__cta">
+                    <span class="btn btn--primary btn--disabled">
+                        Coming Soon
+                    </span>
+                    <a href="#gameplay" class="btn btn--secondary">How to Play</a>
+                </div>
+            </div>
+
+            <!-- Visual -->
+            <div class="hero__visual">
+                <div class="hero__image-wrapper">
+                    <img src="assets/images/app_icon.png" alt="Tower Climb Game" class="hero__image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Features Section
+         ======================================== -->
+    <section class="features section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Features</h2>
+                <p class="section-subtitle">One tower, no end in sight</p>
+            </div>
+
+            <div class="grid grid-auto-fit">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🗼</div>
+                    <h3 class="feature-card__title">Endless Climb</h3>
+                    <p class="feature-card__description">
+                        Procedurally generated platforms mean no two runs are the same. The tower just keeps going.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">👆</div>
+                    <h3 class="feature-card__title">One-Thumb Controls</h3>
+                    <p class="feature-card__description">
+                        Tap the left half of the screen to move left, the right half to move right. That's it.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🚩</div>
+                    <h3 class="feature-card__title">Checkpoint Floors</h3>
+                    <p class="feature-card__description">
+                        Every 100 floors the camera stops on a checkpoint so you can catch your breath before the next stretch.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🌿</div>
+                    <h3 class="feature-card__title">Six Biomes</h3>
+                    <p class="feature-card__description">
+                        Climb from mossy stone through ancient ruins, desert, snow, and volcanic rock, each with its own music.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">🔥</div>
+                    <h3 class="feature-card__title">Combos</h3>
+                    <p class="feature-card__description">
+                        Chain clean landings to build your combo. The HUD tracks your floor count and streak as you climb.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">👾</div>
+                    <h3 class="feature-card__title">Glitch Mode</h3>
+                    <p class="feature-card__description">
+                        Make it past the final stage and the tower starts to break apart, flickering between every biome.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         How It Works Section
+         ======================================== -->
+    <section class="section" id="gameplay">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Play</h2>
+                <p class="section-subtitle">Easy to pick up, hard to put down</p>
+            </div>
+
+            <div class="steps" style="max-width: 600px; margin: 0 auto;">
+                <div class="step">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Tap to Launch</h3>
+                        <p class="step__description">
+                            Start on the ground floor and tap anywhere to begin your run.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Steer Your Bounce</h3>
+                        <p class="step__description">
+                            You bounce automatically on every platform you land on. Tap left or right to steer onto the next one.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Keep Ahead of the Camera</h3>
+                        <p class="step__description">
+                            The camera scrolls upward on its own and speeds up as you climb. Fall below the screen and your run ends.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">4</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Reach a Checkpoint</h3>
+                        <p class="step__description">
+                            Every 100 floors the camera settles on a checkpoint. Tap again to resume when you're ready.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step__number">5</div>
+                    <div class="step__content">
+                        <h3 class="step__title">Climb Higher</h3>
+                        <p class="step__description">
+                            Push through each biome and see how many floors you can conquer before the tower wins.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Stages Section
+         ======================================== -->
+    <section class="section stages" id="stages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Stages</h2>
+                <p class="section-subtitle">Each 100 floors brings a new biome</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="stage-card">
+                    <img src="assets/images/mossy_floor.png" alt="Mossy floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 1-100</p>
+                        <h3 class="stage-card__title">Mossy</h3>
+                        <p class="stage-card__description">Overgrown stone walls wrapped in ivy and roots.</p>
+                    </div>
+                </div>
+
+                <div class="stage-card">
+                    <img src="assets/images/ancient_civilization_floor.png" alt="Ancient civilization floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 101-200</p>
+                        <h3 class="stage-card__title">Ancient Civilization</h3>
+                        <p class="stage-card__description">Carved ruins left behind by whoever built the tower.</p>
+                    </div>
+                </div>
+
+                <div class="stage-card">
+                    <img src="assets/images/eroded_floor.png" alt="Eroded floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 201-300</p>
+                        <h3 class="stage-card__title">Eroded</h3>
+                        <p class="stage-card__description">Weathered brick worn down by centuries of wind.</p>
+                    </div>
+                </div>
+
+                <div class="stage-card">
+                    <img src="assets/images/desert_floor.png" alt="Desert floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 301-400</p>
+                        <h3 class="stage-card__title">Desert</h3>
+                        <p class="stage-card__description">Sun-baked sandstone high above the dunes.</p>
+                    </div>
+                </div>
+
+                <div class="stage-card">
+                    <img src="assets/images/snowy_floor.png" alt="Snowy floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 401-500</p>
+                        <h3 class="stage-card__title">Snowy</h3>
+                        <p class="stage-card__description">Frozen ledges where the air gets thin.</p>
+                    </div>
+                </div>
+
+                <div class="stage-card">
+                    <img src="assets/images/volcanic_floor.png" alt="Volcanic floor tile" class="stage-card__image">
+                    <div class="stage-card__body">
+                        <p class="stage-card__floors">Floors 501-600</p>
+                        <h3 class="stage-card__title">Volcanic</h3>
+                        <p class="stage-card__description">Scorched rock at the top of the world. Then things get weird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA Section
+         ======================================== -->
+    <section class="cta-section section">
+        <div class="container">
+            <h2 class="cta-section__title">Ready to Climb?</h2>
+            <p class="cta-section__description">
+                Tower Climb is coming soon to app stores. Stay tuned!
+            </p>
+            <div class="flex justify-center gap-md flex-wrap">
+                <span class="btn btn--primary btn--disabled">
+                    Coming Soon
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Contact Section
+         ======================================== -->
+    <section class="contact-section section">
+        <div class="container">
+            <h2 class="contact-section__title">Get in Touch</h2>
+            <p class="contact-section__description">
+                Have questions or want to stay updated? Send an email!
+            </p>
+            <div class="flex justify-center gap-md flex-wrap">
+                <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--secondary">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__copyright">
+                © 2026 Tower Climb. All rights reserved.
+            </p>
+            <div class="footer__links">
+                <a href="privacy.html" class="footer__link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JavaScript - Smooth Scroll & Nav Toggle
+         ======================================== -->
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile nav if open
+                    document.getElementById('nav').classList.remove('is-open');
+                }
+            });
+        });
+
+        // Close mobile nav when clicking outside
+        document.addEventListener('click', (e) => {
+            const nav = document.getElementById('nav');
+            if (!nav.contains(e.target)) {
+                nav.classList.remove('is-open');
+            }
+        });
+    </script>
+</body>
+</html>
