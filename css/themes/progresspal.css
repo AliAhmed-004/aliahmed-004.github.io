@@ -1,0 +1,23 @@
+/* ProgressPal: calm teal, streaks and a Pomodoro ring */
+:root {
+    --bg: #0d1513; --bg-2: #111c19; --surface: #15221f; --surface-2: #1c2d29; --line: #24382f; --line-2: #2f4a41;
+    --accent: #1dd4ce; --accent-2: #f9c47c; --on-accent: #04201f;
+    --text: #effaf8; --text-2: #b4cfca; --muted: #7b9993;
+}
+.hero__visual { gap: 0; }
+.pp-stack { position: relative; }
+.pp-ring {
+    position: absolute; left: -64px; bottom: 40px; z-index: 3; width: 110px; height: 110px; border-radius: 50%;
+    display: grid; place-items: center; font-family: var(--pixel); font-size: 1.15rem; color: var(--text);
+    background: conic-gradient(var(--accent) var(--p, 70%), var(--line-2) 0);
+    box-shadow: 0 16px 30px -10px rgba(0,0,0,.8); animation: ring 6s linear infinite;
+}
+.pp-ring::before { content: ''; position: absolute; inset: 9px; border-radius: 50%; background: var(--surface); }
+.pp-ring span { position: relative; }
+@property --p { syntax: '<percentage>'; inherits: false; initial-value: 5%; }
+@keyframes ring { 0% { --p: 5%; } 100% { --p: 100%; } }
+.pp-streak {
+    position: absolute; right: -50px; top: 44px; z-index: 3; padding: 9px 16px; border-radius: 99px; font-family: var(--mono); font-size: .8rem;
+    background: var(--surface-2); border: 1px solid var(--accent); color: var(--text); animation: float 5s ease-in-out infinite;
+}
+@media (max-width: 900px) { .pp-ring { left: -20px; width: 88px; height: 88px; } .pp-streak { right: -10px; } }
