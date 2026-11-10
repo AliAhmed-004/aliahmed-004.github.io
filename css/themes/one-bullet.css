@@ -1,0 +1,16 @@
+/* One Bullet: scanlines, a bullet that never leaves, mono pixels */
+:root {
+    --bg: #0e0d0a; --bg-2: #14130e; --surface: #1a1810; --surface-2: #24211500; --line: #2e2a1a; --line-2: #473f1f;
+    --accent: #f5c518; --accent-2: #ff5d4a; --on-accent: #1a1400;
+    --text: #fffbe8; --text-2: #cfc7a4; --muted: #8b8466;
+}
+:root { --surface-2: #221f12; }
+.hero__title, .section-title, .cta-section__title, .contact-section__title { font-family: var(--pixel); letter-spacing: -.01em; font-weight: 600; }
+.hero__title { font-size: clamp(2.8rem, 7vw, 5.4rem); line-height: .98; }
+.hero::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(to bottom, rgba(0,0,0,.22) 0 2px, transparent 2px 4px); mix-blend-mode: multiply; }
+.hero__visual::after { content: ''; position: absolute; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-2); box-shadow: 0 0 18px 4px rgba(255,93,74,.7); animation: bullet 7s linear infinite; z-index: 3; }
+@keyframes bullet { 0% { left: -60%; top: 20%; } 25% { left: 80%; top: 70%; } 50% { left: 20%; top: 95%; } 75% { left: 95%; top: 10%; } 100% { left: -60%; top: 20%; } }
+.hero__badge::before { content: '●'; color: var(--accent-2); }
+.btn--primary, .step__number { border-radius: 4px; }
+.feature-card { border-radius: 4px; }
+.feature-card__icon { border-radius: 4px; }
