@@ -1,0 +1,13 @@
+/* Gaming Adda: arcade cabinet energy, one app many games */
+:root {
+    --bg: #0b1114; --bg-2: #101a1f; --surface: #15232a; --surface-2: #1c313a; --line: #21404a; --line-2: #2e5a68;
+    --accent: #2ee6d6; --accent-2: #ff5fa2; --on-accent: #032320;
+    --text: #effcfb; --text-2: #aed0d3; --muted: #769ba0;
+}
+.hero__title, .section-title { font-family: var(--pixel); font-weight: 600; letter-spacing: -.01em; }
+.hero__title { font-size: clamp(2.6rem, 6.4vw, 4.8rem); }
+.hero__image-wrapper { animation: float 5s ease-in-out infinite; filter: drop-shadow(0 20px 30px rgba(46,230,214,.25)); }
+.hero__title span { background: linear-gradient(transparent 82%, rgba(255,95,162,.35) 82%); color: var(--accent-2); }
+.feature-card:nth-child(3n+2) .feature-card__icon { background: rgba(255,95,162,.14); border-color: rgba(255,95,162,.4); }
+.feature-card:hover { box-shadow: 0 0 0 1px var(--accent), 0 0 30px -6px rgba(46,230,214,.5); }
+.grid-auto-fit > .feature-card:only-child { max-width: 360px; }
