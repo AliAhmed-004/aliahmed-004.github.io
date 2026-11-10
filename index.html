@@ -3,381 +3,360 @@
 
 <head>
     <meta charset="UTF-8">
-<meta name="google-site-verification" content="iMqpqD-WPpYkrk2ffNXo1JfV9Ccu9UoYEXdc43NMSqQ" />
+    <meta name="google-site-verification" content="iMqpqD-WPpYkrk2ffNXo1JfV9Ccu9UoYEXdc43NMSqQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Ahmed - Full Stack Developer Portfolio</title>
+    <title>Ali Ahmed (SpudByte) - Flutter Developer Shipping Apps and Games</title>
     <meta name="description"
-        content="Ali Ahmed (SpudByte) - Flutter & Full Stack Developer. Building sleek, cross-platform apps with Dart, Python, C++, and Java.">
-    <link rel="icon" type="image/png" href="/assets/spudbyte_logo.png">
-    <link rel="stylesheet" href="/css/variables.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/components.css">
-    <link rel="stylesheet" href="/css/layout.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
+        content="Ali Ahmed (SpudByte) - Flutter developer shipping apps and games. Offline-first, privacy-friendly mobile apps built with Flutter, Dart, Flame and Supabase.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ali Ahmed - Flutter developer shipping apps and games">
+    <meta property="og:description" content="Offline-first apps and games, built on a potato.">
+    <meta property="og:url" content="https://aliahmed-004.github.io/">
+    <meta property="og:image" content="https://aliahmed-004.github.io/assets/og-banner.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#17120e">
+    <link rel="icon" type="image/png" href="/assets/spudbyte_logo_512.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="nav" id="nav">
-        <div class="container nav__content">
-            <a href="/" class="nav__logo">
-                <img src="/assets/spudbyte_logo.png" alt="SpudByte Logo">
+        <div class="nav__content">
+            <a href="/" class="nav__logo" aria-label="SpudByte home">
+                <img src="/assets/spudbyte_logo_512.png" alt="">
                 <span>Ali Ahmed</span>
             </a>
             <div class="nav__links">
                 <a href="#about" class="nav__link">About</a>
                 <a href="#projects" class="nav__link">Projects</a>
-                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#skills" class="nav__link">Stack</a>
                 <a href="#contact" class="nav__link">Contact</a>
+                <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--primary btn--sm nav__cta">Say hi</a>
             </div>
-            <button class="nav__toggle" aria-label="Toggle navigation"
-                onclick="document.getElementById('nav').classList.toggle('is-open')">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero__content">
-            <div class="hero__text">
-                <span class="badge hero__badge">Full Stack Developer</span>
-                <h1 class="hero__title">Hey, I'm<br><span>Ali Ahmed</span></h1>
-                <p class="hero__subtitle">
-                    I build sleek, cross-platform mobile apps and web solutions. Fluent in Dart, Python, C++, Java, and
-                    more. When I'm not debugging code, you'll find me gaming or experimenting in the kitchen.
-                </p>
-                <div class="hero__cta">
-                    <a href="/Ali_Ahmed.pdf" class="btn btn--primary" target="_blank">Download Resume</a>
-                    <a href="#contact" class="btn btn--secondary">Get in Touch</a>
+    <main>
+        <!-- Hero -->
+        <section class="home-hero">
+            <div class="container home-hero__grid">
+                <div>
+                    <div class="status-pill"><span class="status-pill__dot"></span>Currently: fixing one bug, making two more</div>
+                    <h1>Flutter developer shipping <span class="mark">apps</span> and <span class="mark mark--cyan">games</span>.</h1>
+                    <p class="home-hero__lead">
+                        I build sleek, offline-first mobile apps and games that respect your privacy and, with luck, your battery.
+                        When I'm not debugging, I'm gaming or inventing new cooking disasters.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="/Ali_Ahmed.pdf" class="btn btn--primary" target="_blank">Download Resume</a>
+                        <a href="#projects" class="btn btn--secondary">See what I've shipped</a>
+                    </div>
+                </div>
+                <div class="hero-art">
+                    <span class="float-chip float-chip--a">Flutter</span>
+                    <span class="float-chip float-chip--b">Flame</span>
+                    <span class="float-chip float-chip--c">Offline-first</span>
+                    <div class="window">
+                        <div class="window__bar">
+                            <span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span>
+                            <span class="window__title">spudbyte.png</span>
+                        </div>
+                        <img src="/assets/developer-banner.webp" width="1600" height="900"
+                            alt="SpudByte banner: a pixel-art potato with circuit traces and the tagline Built on a potato.">
+                    </div>
                 </div>
             </div>
-            <div class="hero__visual">
-                <div class="hero__image-wrapper">
-                    <img src="/assets/spudbyte_logo.png" alt="Ali Ahmed" class="hero__image">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container about__content">
-            <div>
-                <h2 class="about__title">About Me</h2>
-            </div>
-            <div>
-                <p class="about__description">
-                    My coding journey started with a simple Java app that didn't explode on launch (a win, if you ask
-                    me). I quickly found my true calling with Flutter—building sleek, cross-platform apps while keeping
-                    my sanity intact.
-                </p>
-                <p class="about__description">
-                    I'm proficient in <strong>Dart</strong>, <strong>Python</strong>, <strong>C++</strong>, and
-                    <strong>Java</strong>—basically, if it's got syntax, I'm interested. I love the challenge of solving
-                    complex problems and creating user-friendly applications that just work.
-                </p>
-                <p class="about__description">
-                    When I'm not wrestling with code bugs or ensuring my apps don't crash, I'm battling it out in video
-                    games or discovering new cooking disasters in the kitchen. Let's connect and create something
-                    awesome together!
-                </p>
+        <!-- Ticker -->
+        <div class="ticker" aria-hidden="true">
+            <div class="ticker__track">
+                <span class="ticker__item">Built on a potato</span><span class="ticker__item">Offline-first</span><span class="ticker__item">Shipped to Google Play</span><span class="ticker__item">Tested on a real phone (once)</span><span class="ticker__item">Zero ads in my portfolio</span><span class="ticker__item">Works on my machine</span><span class="ticker__item">Powered by caffeine</span>
+                <span class="ticker__item">Built on a potato</span><span class="ticker__item">Offline-first</span><span class="ticker__item">Shipped to Google Play</span><span class="ticker__item">Tested on a real phone (once)</span><span class="ticker__item">Zero ads in my portfolio</span><span class="ticker__item">Works on my machine</span><span class="ticker__item">Powered by caffeine</span>
             </div>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-        <div class="container">
-            <div class="projects__header">
-                <h2 class="projects__title">Featured Projects</h2>
-            </div>
-            <div class="grid grid-auto-fit">
-                <!-- ProgressPal -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/progresspal/assets/app_icon_512.png" alt="ProgressPal Icon">
-                            </div>
-                            <h3 class="project-card__title">ProgressPal</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A progress and habit tracking app built with a "learn by doing" mindset. Features streak
-                            tracking, Pomodoro timer, progress visualization, and offline storage.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Dart</span>
-                            <span class="tag">Productivity</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/progresspal/" class="btn btn--primary btn--sm">View Project</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.spudbyte.progresspal&pcampaignid=web_share"
-                                class="btn btn--secondary btn--sm" target="_blank">Download</a>
-                        </div>
+        <!-- Stats -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats__grid">
+                    <div class="stat">
+                        <div class="stat__num"><span data-count="3">3</span></div>
+                        <div class="stat__label">Apps live on Google Play</div>
+                        <div class="stat__note">go on, install one</div>
                     </div>
-                </div>
-
-                <!-- Personal Diary -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/personal-diary/assets/resized_logo.png" alt="Personal Diary Icon">
-                            </div>
-                            <h3 class="project-card__title">Personal Diary</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A personal diary app to keep track of your thoughts and experiences. Clean interface
-                            designed for reflection and journaling.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Dart</span>
-                            <span class="tag">Journaling</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/personal-diary/" class="btn btn--primary btn--sm">View Project</a>
-                            <a href="https://youtube.com/shorts/zwbrz0Czb1Q?si=d_9Oy82bWYFjYRqr"
-                                class="btn btn--secondary btn--sm" target="_blank">Demo</a>
-                        </div>
+                    <div class="stat">
+                        <div class="stat__num"><span data-count="7">7</span></div>
+                        <div class="stat__label">Projects below</div>
+                        <div class="stat__note">and counting</div>
                     </div>
-                </div>
-
-                <!-- One Bullet -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/one-bullet/assets/images/app_logo_no_bg.png" alt="One Bullet Icon">
-                            </div>
-                            <h3 class="project-card__title">One Bullet</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A retro arcade-style survival game. Fire a single bullet that never despawns and see how
-                            long you can survive with wave-based progression.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Game Dev</span>
-                            <span class="tag">Arcade</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/one-bullet/" class="btn btn--primary btn--sm">View Project</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.spudbyte.one_bullet"
-                                class="btn btn--secondary btn--sm" target="_blank">Play Game</a>
-                        </div>
+                    <div class="stat">
+                        <div class="stat__num">1</div>
+                        <div class="stat__label">Framework</div>
+                        <div class="stat__note">very loyal</div>
                     </div>
-                </div>
-
-                <!-- Sand Fall -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/sand-fall/assets/images/app_icon.png" alt="Sand Fall Icon">
-                            </div>
-                            <h3 class="project-card__title">Sand Fall</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A sand-physics puzzle game. Place blocks that break into sand grains and settle under
-                            gravity. Clear bridges to score points.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Physics</span>
-                            <span class="tag">Puzzle</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/sand-fall/" class="btn btn--primary btn--sm">View Project</a>
-                            <a href="https://play.google.com/store/apps/details?id=com.spudbyte.sandfall&pcampaignid=web_share"
-                                class="btn btn--secondary btn--sm" target="_blank">Play Game</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tower Climb -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/tower-climb/assets/images/app_icon.png" alt="Tower Climb Icon">
-                            </div>
-                            <h3 class="project-card__title">Tower Climb</h3>
-                        </div>
-                        <p class="project-card__description">
-                            An endless vertical pixel-art platformer. Bounce between platforms, outrun the camera,
-                            and climb a mossy tower through six biomes.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Flame</span>
-                            <span class="tag">Platformer</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/tower-climb/" class="btn btn--primary btn--sm">View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- UpNext -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/upnext/assets/launcher_icon.png" alt="UpNext Icon">
-                            </div>
-                            <h3 class="project-card__title">UpNext</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A digital freecycling platform for listing unwanted items, discovering nearby giveaways,
-                            booking pickups, and chatting to coordinate local reuse.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Supabase</span>
-                            <span class="tag">Community</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/upnext/" class="btn btn--primary btn--sm">View Project</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Sticky Situation -->
-                <div class="project-card">
-                    <div class="project-card__body">
-                        <div class="project-card__title-wrapper">
-                            <div class="project-card__icon">
-                                <img src="/sticky-situation/assets/icon_512.png"
-                                    alt="Sticky Situation Icon">
-                            </div>
-                            <h3 class="project-card__title">Sticky Situation</h3>
-                        </div>
-                        <p class="project-card__description">
-                            A cozy tactile puzzle game about peeling, solving, and collecting charming stickers
-                            across handcrafted levels.
-                        </p>
-                        <div class="project-card__tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Flame</span>
-                            <span class="tag">Puzzle</span>
-                        </div>
-                        <div class="project-card__actions">
-                            <a href="/sticky-situation/" class="btn btn--primary btn--sm">View Project</a>
-                        </div>
+                    <div class="stat">
+                        <div class="stat__num">&infin;</div>
+                        <div class="stat__label">Bugs</div>
+                        <div class="stat__note">undisclosed</div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="sec-head">
+                    <h2>Things I've built</h2>
+                    <p>Tap a row to peek inside. No spoilers about the bugs.</p>
+                </div>
+                <div class="proj-list">
+
+                    <!-- ProgressPal -->
+                    <div class="proj is-open" style="--c:#1dd4ce">
+                        <button class="proj__head" aria-expanded="true">
+                            <span class="proj__idx">01</span>
+                            <span class="proj__icon"><img src="/progresspal/assets/app_icon_512.png" alt=""></span>
+                            <span class="proj__name">ProgressPal<span class="proj__kind">habit &amp; progress tracker</span></span>
+                            <span class="proj__badge proj__badge--live">Live on Google Play</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A progress and habit tracking app built with a "learn by doing" mindset. Streak tracking, a Pomodoro timer, progress visualization and offline storage.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Productivity</span></div>
+                                <div class="proj__actions">
+                                    <a href="/progresspal/" class="btn btn--primary btn--sm">View project</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.spudbyte.progresspal&pcampaignid=web_share" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">Google Play</a>
+                                </div>
+                            </div>
+                            <div class="proj__shot"><img src="/progresspal/assets/progresspal_screenshot.jpg" alt="ProgressPal screenshot" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- Personal Diary -->
+                    <div class="proj" style="--c:#b87bff">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">02</span>
+                            <span class="proj__icon"><img src="/personal-diary/assets/resized_logo.png" alt=""></span>
+                            <span class="proj__name">Personal Diary<span class="proj__kind">private journaling</span></span>
+                            <span class="proj__badge">Demo available</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A personal diary app to keep track of your thoughts and experiences. A clean interface designed for reflection and journaling, with nobody peeking.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Journaling</span></div>
+                                <div class="proj__actions">
+                                    <a href="/personal-diary/" class="btn btn--primary btn--sm">View project</a>
+                                    <a href="https://youtube.com/shorts/zwbrz0Czb1Q?si=d_9Oy82bWYFjYRqr" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">Watch demo</a>
+                                </div>
+                            </div>
+                            <div class="proj__shot"><img src="/personal-diary/assets/personal_diary_screenshot.jpg" alt="Personal Diary screenshot" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- One Bullet -->
+                    <div class="proj" style="--c:#f5c518">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">03</span>
+                            <span class="proj__icon"><img src="/one-bullet/assets/images/app_logo_no_bg.png" alt=""></span>
+                            <span class="proj__name">One Bullet<span class="proj__kind">retro survival game</span></span>
+                            <span class="proj__badge proj__badge--live">Live on Google Play</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A retro arcade-style survival game. Fire a single bullet that never despawns and see how long you can survive as the waves roll in.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Game Dev</span><span class="tag">Arcade</span></div>
+                                <div class="proj__actions">
+                                    <a href="/one-bullet/" class="btn btn--primary btn--sm">View project</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.spudbyte.one_bullet" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">Play game</a>
+                                </div>
+                            </div>
+                            <div class="proj__shot"><img src="/one-bullet/assets/images/one_bullet_screenshot.jpg" alt="One Bullet screenshot" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- Sand Fall -->
+                    <div class="proj" style="--c:#e9a23b">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">04</span>
+                            <span class="proj__icon"><img src="/sand-fall/assets/images/app_icon.png" alt=""></span>
+                            <span class="proj__name">Sand Fall<span class="proj__kind">sand-physics puzzle</span></span>
+                            <span class="proj__badge proj__badge--live">Live on Google Play</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A sand-physics puzzle game. Place blocks that shatter into sand grains and settle under gravity, then clear bridges to score points.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Physics</span><span class="tag">Puzzle</span></div>
+                                <div class="proj__actions">
+                                    <a href="/sand-fall/" class="btn btn--primary btn--sm">View project</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.spudbyte.sandfall&pcampaignid=web_share" class="btn btn--secondary btn--sm" target="_blank" rel="noopener">Play game</a>
+                                </div>
+                            </div>
+                            <div class="proj__shot"><img src="/sand-fall/assets/images/sandfall_screenshot.jpg" alt="Sand Fall screenshot" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- Tower Climb -->
+                    <div class="proj" style="--c:#8bc34a">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">05</span>
+                            <span class="proj__icon"><img src="/tower-climb/assets/images/app_icon.png" alt=""></span>
+                            <span class="proj__name">Tower Climb<span class="proj__kind">endless pixel platformer</span></span>
+                            <span class="proj__badge">Coming soon</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">An endless vertical pixel-art platformer. Bounce between platforms, outrun the camera, and climb a mossy tower through six biomes.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Flame</span><span class="tag">Platformer</span></div>
+                                <div class="proj__actions">
+                                    <a href="/tower-climb/" class="btn btn--primary btn--sm">View project</a>
+                                </div>
+                            </div>
+                            <div class="proj__art proj__art--cover"><img src="/tower-climb/assets/images/mossy_background.jpg" alt="Mossy tower wall from Tower Climb" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- UpNext -->
+                    <div class="proj" style="--c:#4ade80">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">06</span>
+                            <span class="proj__icon"><img src="/upnext/assets/launcher_icon.png" alt=""></span>
+                            <span class="proj__name">UpNext<span class="proj__kind">digital freecycling</span></span>
+                            <span class="proj__badge">Coming soon</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A digital freecycling platform for listing unwanted items, discovering nearby giveaways, booking pickups, and chatting to coordinate local reuse.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Supabase</span><span class="tag">Community</span></div>
+                                <div class="proj__actions">
+                                    <a href="/upnext/" class="btn btn--primary btn--sm">View project</a>
+                                </div>
+                            </div>
+                            <div class="proj__art"><img src="/upnext/assets/launcher_icon.png" alt="UpNext app icon" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                    <!-- Sticky Situation -->
+                    <div class="proj" style="--c:#ff9d5c">
+                        <button class="proj__head" aria-expanded="false">
+                            <span class="proj__idx">07</span>
+                            <span class="proj__icon"><img src="/sticky-situation/assets/icon_512.png" alt=""></span>
+                            <span class="proj__name">Sticky Situation<span class="proj__kind">cozy peel-and-collect puzzler</span></span>
+                            <span class="proj__badge">In the works</span>
+                            <span class="proj__plus"></span>
+                        </button>
+                        <div class="proj__panel"><div><div class="proj__body">
+                            <div>
+                                <p class="proj__desc">A cozy tactile puzzle game about peeling, solving, and collecting charming stickers across handcrafted levels.</p>
+                                <div class="proj__tags"><span class="tag">Flutter</span><span class="tag">Flame</span><span class="tag">Puzzle</span></div>
+                                <div class="proj__actions">
+                                    <a href="/sticky-situation/" class="btn btn--primary btn--sm">View project</a>
+                                </div>
+                            </div>
+                            <div class="proj__shot"><img src="/sticky-situation/assets/02_peel.png" alt="Sticky Situation screenshot" loading="lazy"></div>
+                        </div></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about" style="background:var(--bg-2);border-block:1px solid var(--line)">
+            <div class="container about-grid">
+                <div>
+                    <span class="eyebrow">// about</span>
+                    <h2>The short version</h2>
+                    <p>My coding journey started with a simple Java app that didn't explode on launch (a win, if you ask me). I quickly found my true calling in Flutter: sleek, cross-platform apps with my sanity mostly intact.</p>
+                    <p>I'm proficient in <strong>Dart</strong>, <strong>Python</strong>, <strong>C++</strong> and <strong>Java</strong>. Basically, if it's got syntax, I'm interested. I love solving complex problems and building apps that just work, preferably without a network connection.</p>
+                    <p>When I'm not wrestling with bugs, I'm battling it out in video games or discovering new cooking disasters in the kitchen. Let's build something awesome together.</p>
+                </div>
+                <div class="term" aria-label="Terminal card about Ali">
+                    <div class="term__bar"><span class="window__dot"></span><span class="window__dot"></span><span class="window__dot"></span><span>ali@spudbyte: ~</span></div>
+                    <div class="term__body">
+                        <div><span class="term__prompt">$</span> whoami</div>
+                        <div class="term__out">ali-ahmed // flutter developer</div>
+                        <div><span class="term__prompt">$</span> cat stack.txt</div>
+                        <div class="term__gold">flutter dart flame supabase python c++ java</div>
+                        <div><span class="term__prompt">$</span> ls hobbies/</div>
+                        <div class="term__out">gaming/  cooking_disasters/  debugging/</div>
+                        <div><span class="term__prompt">$</span> git blame</div>
+                        <div class="term__dim">it was me. it's always me.</div>
+                        <div><span class="term__prompt">$</span> status</div>
+                        <div class="term__out">shipping. mostly compiling. <span class="term__cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="sec-head">
+                    <h2>Tech stack</h2>
+                    <p>Hover a chip. They all have opinions.</p>
+                </div>
+                <div class="stack-chips">
+                    <div class="chip" tabindex="0" data-joke="Flutter: everything is a widget. Including my self-esteem.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy">Flutter</div>
+                    <div class="chip" tabindex="0" data-joke="Dart: it's like Java, but it went to therapy.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="" loading="lazy">Dart</div>
+                    <div class="chip" tabindex="0" data-joke="Supabase: a backend I didn't have to build. Zero regrets.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="" loading="lazy">Supabase</div>
+                    <div class="chip" tabindex="0" data-joke="Python: indentation is a personality trait.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy">Python</div>
+                    <div class="chip" tabindex="0" data-joke="C++: pointers, but make it emotional.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="" loading="lazy">C++</div>
+                    <div class="chip" tabindex="0" data-joke="Java: where it all began. Still can't say it without sighing.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy">Java</div>
+                    <div class="chip" tabindex="0" data-joke="JavaScript: '2' + 2 = '22'. Moving on.">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</div>
+                </div>
+                <div class="joke-bar" id="joke-bar" aria-live="polite">Hover a chip. They have opinions.</div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="hello" id="contact">
+            <div class="container">
+                <h2>Let's build something <em>(that compiles)</em>.</h2>
+                <p>Got a project, a bug that needs a hug, or just want to say hi? My inbox is open and my coffee is hot.</p>
+                <div class="hello__actions">
+                    <button class="btn btn--primary copy-btn" id="copy-email" data-email="ali.the.ahmed18@gmail.com">ali.the.ahmed18@gmail.com</button>
+                    <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--secondary">Open mail app</a>
+                </div>
+                <div class="hello__links">
+                    <a href="https://github.com/aliahmed-004" target="_blank" rel="noopener">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/ali-the-ahmed/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                    <a href="/Ali_Ahmed.pdf" target="_blank">Resume ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__copyright">&copy; 2026 Ali Ahmed (SpudByte). All rights reserved.</p>
+            <p class="footer__joke">Made with caffeine, curiosity and one very loud potato.</p>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-        <div class="container skills__content">
-            <h2 class="skills__title">Tech Stack</h2>
-            <div class="skills__grid">
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-                            alt="Flutter">
-                    </div>
-                    <div class="skill-item__name">Flutter</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
-                    </div>
-                    <div class="skill-item__name">Dart</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase">
-                    </div>
-                    <div class="skill-item__name">Supabase</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                            alt="Python">
-                    </div>
-                    <div class="skill-item__name">Python</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                            alt="C++">
-                    </div>
-                    <div class="skill-item__name">C++</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                    </div>
-                    <div class="skill-item__name">Java</div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-item__icon">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript">
-                    </div>
-                    <div class="skill-item__name">JavaScript</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container contact__content">
-            <h2 class="contact__title">Let's Work Together</h2>
-            <p class="contact__description">
-                Have an interesting project or just want to say hi? I'd love to hear from you. Reach out through any of
-                the channels below.
-            </p>
-            <div class="contact__buttons">
-                <a href="mailto:ali.the.ahmed18@gmail.com" class="btn btn--primary">Email Me</a>
-                <a href="https://www.linkedin.com/in/ali-the-ahmed/" class="btn btn--secondary"
-                    target="_blank">LinkedIn</a>
-                <a href="https://github.com/aliahmed-004" class="btn btn--secondary" target="_blank">GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Ali Ahmed (SpudByte). All rights reserved.</p>
     </footer>
 
-    <script>
-        // Mobile nav toggle
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('nav').classList.remove('is-open');
-            });
-        });
-
-        // Close nav when clicking outside
-        document.addEventListener('click', (e) => {
-            const nav = document.getElementById('nav');
-            if (!nav.contains(e.target)) {
-                nav.classList.remove('is-open');
-            }
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+    <script src="/js/site.js" defer></script>
 </body>
 
 </html>
