@@ -1,0 +1,16 @@
+/* Personal Diary: ruled paper, handwriting, a little lock */
+:root {
+    --bg: #130f19; --bg-2: #19141f; --surface: #1f1928; --surface-2: #2a2236; --line: #33294a; --line-2: #473a66;
+    --accent: #c58bff; --accent-2: #f9c47c; --on-accent: #1b0b2e;
+    --text: #f6f0ff; --text-2: #c9bde0; --muted: #8d7fa8;
+}
+.hero { background-image: repeating-linear-gradient(to bottom, transparent 0 39px, rgba(197,139,255,.07) 39px 40px); }
+.hero::before { content: ''; position: absolute; left: max(4vw, 24px); top: 0; bottom: 0; width: 2px; background: rgba(255,120,140,.18); }
+.hero__title { font-family: 'Caveat', var(--font); font-weight: 700; font-size: clamp(3.2rem, 8vw, 6rem); letter-spacing: 0; line-height: .95; }
+.diary-note {
+    display: inline-block; margin-top: 26px; padding: 14px 20px; font-family: 'Caveat', cursive; font-size: 1.5rem; color: #2b2033;
+    background: #f7ecd2; border-radius: 4px; transform: rotate(-2deg); box-shadow: 0 14px 28px -12px rgba(0,0,0,.7); max-width: 340px; line-height: 1.2;
+}
+.hero__description + .diary-note { display: block; margin-bottom: 26px; }
+.phone::after { content: '🔒'; position: absolute; right: -18px; bottom: 38px; font-size: 1.8rem; background: var(--surface-2); border: 1px solid var(--accent); border-radius: 50%; width: 54px; height: 54px; display: grid; place-items: center; animation: float 5s ease-in-out infinite; }
+.feature-card { border-radius: 6px 24px 6px 24px; }
