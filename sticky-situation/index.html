@@ -6,69 +6,99 @@
   <meta name="description" content="Sticky Situation is a cozy tactile puzzle game about peeling, solving, and collecting stickers.">
   <title>Sticky Situation | Peel. Solve. Collect.</title>
   <link rel="icon" href="assets/icon_512.png" type="image/png">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Pixelify+Sans:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/themes/sticky-situation.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-  <nav class="nav">
-    <a class="brand" href="#"><img src="assets/icon_512.png" alt="">Sticky Situation</a>
-    <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="privacy.html">Privacy</a>
+<body class="theme-sticky-situation">
+  <nav class="nav" id="nav">
+    <div class="container nav__content">
+      <a href="/" class="nav__logo">
+        <img src="assets/icon_512.png" alt="Sticky Situation logo">
+        <span>Sticky Situation</span>
+      </a>
+      <div class="nav__links">
+        <a href="#features" class="nav__link">Features</a>
+        <a href="#screenshots" class="nav__link">Screenshots</a>
+        <a href="privacy.html" class="nav__link">Privacy</a>
+      </div>
+      <button class="nav__toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <main>
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">A cozy tactile puzzle game</p>
-        <h1>Peel. Solve.<br><span>Collect.</span></h1>
-        <p class="lead">Turn every sticky situation into a satisfying little discovery.</p>
-        <div class="actions">
-          <a class="button primary" href="#screenshots">See the game</a>
-          <a class="button secondary" href="privacy.html">Privacy policy</a>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="badge hero__badge">A cozy tactile puzzle game</span>
+          <h1 class="hero__title">Peel. Solve.<br><span>Collect.</span></h1>
+          <p class="hero__description">Turn every sticky situation into a satisfying little discovery.</p>
+          <div class="hero__cta">
+            <a href="#screenshots" class="btn btn--primary">See the game</a>
+            <a href="privacy.html" class="btn btn--secondary">Privacy policy</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-art" aria-label="Sticky Situation game preview">
-        <img src="assets/feature_graphic.png" alt="Sticky Situation feature graphic">
+        <div class="hero__visual">
+          <img src="assets/feature_graphic.png" alt="Sticky Situation feature graphic" class="hero__image">
+        </div>
       </div>
     </section>
 
-    <section class="section" id="features">
-      <p class="eyebrow">Made for curious fingers</p>
-      <h2>Small actions. Big aha moments.</h2>
-      <div class="feature-grid">
-        <article><span>✦</span><h3>Peel and reveal</h3><p>Lift stickers, uncover clues, and see what hides underneath.</p></article>
-        <article><span>↻</span><h3>Play your way</h3><p>Rub, rip, swap, and place pieces through tactile puzzle scenes.</p></article>
-        <article><span>♡</span><h3>Keep your finds</h3><p>Fill a charming sticker book with discoveries from every level.</p></article>
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Small actions. Big aha moments.</h2>
+          <p class="section-subtitle">Made for curious fingers.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="feature-card"><div class="feature-card__icon">✦</div><h3 class="feature-card__title">Peel and reveal</h3><p class="feature-card__description">Lift stickers, uncover clues, and see what hides underneath.</p></div>
+          <div class="feature-card"><div class="feature-card__icon">↻</div><h3 class="feature-card__title">Play your way</h3><p class="feature-card__description">Rub, rip, swap, and place pieces through tactile puzzle scenes.</p></div>
+          <div class="feature-card"><div class="feature-card__icon">♡</div><h3 class="feature-card__title">Keep your finds</h3><p class="feature-card__description">Fill a charming sticker book with discoveries from every level.</p></div>
+        </div>
       </div>
     </section>
 
     <section class="screens section" id="screenshots">
-      <div class="section-heading">
-        <div><p class="eyebrow">A little look inside</p><h2>Colorful calm, one puzzle at a time.</h2></div>
-        <p>Designed for short sessions, offline play, and satisfying progress.</p>
-      </div>
-      <div class="screen-grid">
-        <figure><img src="assets/01_menu.png" alt="Sticky Situation menu screen"><figcaption>Start a new find</figcaption></figure>
-        <figure><img src="assets/02_peel.png" alt="Peeling a sticker in Sticky Situation"><figcaption>Peel the clue</figcaption></figure>
-        <figure><img src="assets/03_clean.png" alt="Cleaning a device in Sticky Situation"><figcaption>Clean the mess</figcaption></figure>
-        <figure><img src="assets/04_mint.png" alt="Mint collectible reveal in Sticky Situation"><figcaption>Find rare stickers</figcaption></figure>
-        <figure><img src="assets/05_book.png" alt="Sticker book in Sticky Situation"><figcaption>Build your book</figcaption></figure>
-        <figure><img src="assets/06_boss.png" alt="Boss level in Sticky Situation"><figcaption>Face boss levels</figcaption></figure>
-        <figure><img src="assets/07_surfaces.png" alt="Different surfaces in Sticky Situation"><figcaption>Peel every surface</figcaption></figure>
-        <figure><img src="assets/08_levels.png" alt="Level selection in Sticky Situation"><figcaption>Keep exploring</figcaption></figure>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Colorful calm, one puzzle at a time.</h2>
+          <p class="section-subtitle">Designed for short sessions, offline play, and satisfying progress.</p>
+        </div>
+        <div class="screen-grid">
+          <figure><img src="assets/01_menu.png" alt="Sticky Situation menu screen" loading="lazy"><figcaption>Start a new find</figcaption></figure>
+          <figure><img src="assets/02_peel.png" alt="Peeling a sticker in Sticky Situation" loading="lazy"><figcaption>Peel the clue</figcaption></figure>
+          <figure><img src="assets/03_clean.png" alt="Cleaning a device in Sticky Situation" loading="lazy"><figcaption>Clean the mess</figcaption></figure>
+          <figure><img src="assets/04_mint.png" alt="Mint collectible reveal in Sticky Situation" loading="lazy"><figcaption>Find rare stickers</figcaption></figure>
+          <figure><img src="assets/05_book.png" alt="Sticker book in Sticky Situation" loading="lazy"><figcaption>Build your book</figcaption></figure>
+          <figure><img src="assets/06_boss.png" alt="Boss level in Sticky Situation" loading="lazy"><figcaption>Face boss levels</figcaption></figure>
+          <figure><img src="assets/07_surfaces.png" alt="Different surfaces in Sticky Situation" loading="lazy"><figcaption>Peel every surface</figcaption></figure>
+          <figure><img src="assets/08_levels.png" alt="Level selection in Sticky Situation" loading="lazy"><figcaption>Keep exploring</figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
-      <p class="eyebrow">Ready to get unstuck?</p>
-      <h2>Find your next favorite sticker.</h2>
-      <p>Sticky Situation is coming to Google Play.</p>
-      <span class="button primary disabled">Coming soon</span>
+    <section class="cta-section section">
+      <div class="container">
+        <span class="eyebrow">Ready to get unstuck?</span>
+        <h2 class="cta-section__title">Find your next favorite sticker.</h2>
+        <p class="cta-section__description">Sticky Situation is coming to Google Play.</p>
+        <span class="btn btn--primary btn--disabled">Coming soon</span>
+      </div>
     </section>
   </main>
 
-  <footer><span>© 2026 Sticky Situation</span><a href="privacy.html">Privacy policy</a></footer>
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copyright">© 2026 Sticky Situation. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="/" class="footer__link">More from SpudByte</a>
+        <a href="privacy.html" class="footer__link">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/site.js" defer></script>
 </body>
 </html>

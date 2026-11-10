@@ -1,0 +1,26 @@
+/* Sticky Situation: cozy stickers, tilted cards, a peeling corner */
+:root {
+    --bg: #1d1511; --bg-2: #251a14; --surface: #2d2119; --surface-2: #3a2b21; --line: #4a382b; --line-2: #62493a;
+    --accent: #ff9d5c; --accent-2: #6fd0c4; --on-accent: #2a1204;
+    --text: #fff6ea; --text-2: #dcc6b0; --muted: #a58d77;
+    --st-1: #ffd9a8; --st-2: #bfeadf; --st-3: #ffc4bd; --st-ink: #46372e;
+}
+.feature-card, .card { background: var(--st-1); border: 0; color: var(--st-ink); border-radius: 22px; box-shadow: 0 16px 30px -14px rgba(0,0,0,.7); position: relative; }
+.feature-card:nth-child(3n+2) { background: var(--st-2); transform: rotate(1.4deg); }
+.feature-card:nth-child(3n+3) { background: var(--st-3); transform: rotate(-1.2deg); }
+.feature-card:nth-child(3n+1) { transform: rotate(-.8deg); }
+.feature-card:hover { transform: rotate(0) translateY(-6px); }
+.feature-card__title { color: var(--st-ink); } .feature-card__description { color: #6b5848; }
+.feature-card__icon { background: rgba(255,255,255,.6); border-color: rgba(70,55,46,.2); }
+.feature-card::before { content: ''; position: absolute; top: 0; right: 0; width: 34px; height: 34px; background: linear-gradient(225deg, var(--bg) 50%, rgba(0,0,0,.16) 50%); border-bottom-left-radius: 12px; transition: width .3s var(--ease), height .3s var(--ease); }
+.feature-card:hover::before { width: 54px; height: 54px; }
+.hero__image { border-radius: 24px; width: min(100%, 520px); animation: none; transform: rotate(-3deg); transition: transform .5s var(--ease); background: transparent; box-shadow: 0 30px 50px -24px rgba(0,0,0,.8); }
+.hero__image:hover { transform: rotate(0) scale(1.03); }
+.screens { background: var(--bg-2); border-block: 1px solid var(--line); }
+.screen-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+.screen-grid figure { margin: 0; text-align: center; transition: transform .4s var(--ease); }
+.screen-grid figure:nth-child(odd) { transform: rotate(-1.5deg); } .screen-grid figure:nth-child(even) { transform: rotate(1.5deg) translateY(14px); }
+.screen-grid figure:hover { transform: rotate(0) scale(1.04); }
+.screen-grid img { width: 100%; max-width: 250px; margin: 0 auto; border-radius: 22px; border: 6px solid var(--st-1); box-shadow: 0 20px 30px -16px rgba(0,0,0,.8); }
+.screen-grid figcaption { margin-top: 14px; font-weight: 600; color: var(--text); font-size: .9rem; }
+@media (max-width: 900px) { .screen-grid { grid-template-columns: repeat(2, 1fr); } }
